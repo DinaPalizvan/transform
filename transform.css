@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(165, 235, 223, 0.467);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container{
+    width: 200px;
+    height: 150px;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 25px 50px;
+    box-shadow: 0 0 15px rgba(0, 158, 134, 0.788);
+    position: relative;
+}
+.container div:not(.back){
+    width: 100px;
+    height: 100px;
+    background-color: rgba(43, 255, 209, 0.6);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.back{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(200, 200, 200, 0.436);
+    position: absolute;
+    z-index: 0;
+}
+.div1:hover{
+    transform: rotate(45deg)
+}
+.div2:hover{
+    transform: rotateX(50deg);
+}
+.div3:hover{
+    transform: rotateY(50deg);
+}
+.div4:hover{
+    transform: scale(2);
+}
+.div5:hover{
+    transform: scaleX(2);
+}
+.div6:hover{
+    transform: scaleY(2);
+}
+.div7:hover{
+    transform: skewX(50deg);
+}
+.div8:hover{
+    transform: skewY(50deg);
+}
+.div9:hover{
+    transform: translate(40%,40%);
+}
+.div10:hover{
+    transform: translateX(40%) ;
+}
+#box{
+    margin-left:33% ;
+}
+#box2{
+    margin-right:33% ;
+}
+.div11:hover{
+    transform:translateY(40%);
+}
+.div12:hover{
+    transform: skewY(40deg) scale(2);
+}
+.div12{
+    transform-origin: left;
+}
+.div13:hover{
+    transform:perspective(80px) rotateX(40deg) ;
+}
+.div14:hover{
+    transform:perspective(80px) rotateY(40deg);
+}
+.div15:hover{
+    transform: rotate(45deg);
+}
+.div15{
+    transform-origin: 100% 0;
+}
+.div16:hover{
+    transform: rotate(45deg);
+}
+.div16{
+    transform-origin: 0 100%;
+}
+.div17:hover{
+    transform: perspective(200px) rotateX(40deg);
+    transform-origin: bottom;
+}
+.div18:hover{
+    transform: perspective(300px) rotateX(60deg);
+}
+.div18{
+    transform-origin: top;
+}
+.div19:hover{
+    transform: perspective(200px) rotatey(40deg);
+    transform-origin: left;
+}
+.div20:hover{
+    transform: perspective(200px) rotatey(65deg);
+}
+.div20{
+    transform-origin: right;
+}
+.div21:hover{
+    transform: scale(2);
+}
+.div21{
+    transform-origin: 100% 0;
+}
+.div22:hover{
+    transform: scale(2);
+}
+.div22{
+    transform-origin: 0 100% ;
+}
+.div23:hover{
+    transform: scaleX(2);
+}
+.div23{
+    transform-origin: right;
+}
+.div24:hover{
+    transform: scaleX(2);
+}
+.div24{
+    transform-origin: left;
+}
+.div25:hover{
+    transform: scaleY(2);
+}
+.div25{
+    transform-origin: top;
+}
+.div26:hover{
+    transform: scaleY(2);
+}
+.div26{
+    transform-origin: bottom
+}
